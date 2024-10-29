@@ -59,6 +59,7 @@
     <string name="ResetAccountCancelledAlert">محاولاتك الأخيرة لحذف هذا الحساب قد أُلغيت من قبل مُستخدمه النشط. ترجى إعادة المحاولة بعد 7 أيام.</string>
     <string name="CancelLinkExpired">رابط غير صحيح أو منتهي الصلاحية.</string>
     <string name="CancelLinkSuccessTitle">تم!</string>
+    <string name="tap_here_to_use_bot">اضغط هنا لاستخدام هذا البوت</string>
     <string name="CancelLinkSuccess">تم إلغاء عملية حذف حسابك %1$s.\nيمكنك الآن إغلاق هذه النافذة.</string>
     <string name="OtherLoginCode">رمز الدخول هو **%1$s**. قم بإدخاله في تطبيق تيليجرام الذي تحاول تسجيل الدخول منه.\n\nلا تعطِ هذا الرمز لأي شخص كان.</string>
     <string name="SmsAvailableIn">يمكنك طلب رسالة نصية SMS بعد %1$d:%2$02d</string>

@@ -368,6 +368,8 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
     private QuickRepliesEmptyView quickRepliesEmptyView;
     private BusinessLinksEmptyView businessLinksEmptyView;
     public ChatActivityFragmentView contentView;
+    private TooltipWithArrowDrawable tooltipWithArrowDrawable;
+    boolean tooltipShown = false;  // To ensure tooltip is shown only once
     private ChatBigEmptyView bigEmptyView;
     private ArrayList<View> actionModeViews = new ArrayList<>();
     private ChatAvatarContainer avatarContainer;
@@ -7921,6 +7923,12 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         bottomOverlayChat.setClipChildren(false);
         contentView.addView(bottomOverlayChat, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, 51, Gravity.BOTTOM));
 
+        // Initialize the TooltipWithArrowDrawable with the icon and animation
+        if (tooltipWithArrowDrawable == null) {
+            tooltipWithArrowDrawable = new TooltipWithArrowDrawable(context, contentView,
+                    Theme.getColor(Theme.key_undo_background),
+                    Theme.getColor(Theme.key_featuredStickers_buttonText));
+        }
         bottomOverlayStartButton = new TextView(context) {
             CellFlickerDrawable cellFlickerDrawable;
 
@@ -7935,6 +7943,11 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
                 cellFlickerDrawable.setParentWidth(getMeasuredWidth());
                 AndroidUtilities.rectTmp.set(0, 0, getMeasuredWidth(), getMeasuredHeight());
                 cellFlickerDrawable.draw(canvas, AndroidUtilities.rectTmp, AndroidUtilities.dp(4), null);
+                // Show tooltip when button is drawn, and only do it once
+                if (!tooltipShown) {
+                    tooltipWithArrowDrawable.show(this, LocaleController.getString(R.string.tap_here_to_use_bot));  // Show tooltip
+                    tooltipShown = true;  // Prevent multiple showings
+                }
                 invalidate();
             }
 
@@ -7953,7 +7966,13 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         bottomOverlayStartButton.setGravity(Gravity.CENTER);
         bottomOverlayStartButton.setTypeface(AndroidUtilities.bold());
         bottomOverlayStartButton.setVisibility(View.GONE);
-        bottomOverlayStartButton.setOnClickListener(v -> bottomOverlayChatText.callOnClick());
+        bottomOverlayStartButton.setOnClickListener(v -> {
+            if (tooltipWithArrowDrawable != null) {
+                tooltipWithArrowDrawable.hide();
+                tooltipShown = false;
+            }
+            bottomOverlayChatText.callOnClick();
+        });
         bottomOverlayChat.addView(bottomOverlayStartButton, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT, Gravity.CENTER, 8, 8, 8, 8));
 
         if (currentUser != null && currentUser.bot && currentUser.id != UserObject.VERIFY && !UserObject.isDeleted(currentUser) && !UserObject.isReplyUser(currentUser) && !isInScheduleMode() && chatMode != MODE_PINNED && chatMode != MODE_SAVED && !isReport()) {

@@ -7,7 +7,6 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -34,7 +33,6 @@ import androidx.core.graphics.ColorUtils;
 
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.ApplicationLoader;
-import org.telegram.messenger.DialogObject;
 import org.telegram.messenger.FileLog;
 import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.MessagesController;
@@ -49,7 +47,6 @@ import org.telegram.ui.ActionBar.BaseFragment;
 import org.telegram.ui.ActionBar.BottomSheet;
 import org.telegram.ui.ActionBar.Theme;
 import org.telegram.ui.Cells.DialogCell;
-import org.telegram.ui.ManageLinksActivity;
 
 import java.util.ArrayList;
 
@@ -220,6 +217,10 @@ public class LinkActionView extends LinearLayout {
 
         optionsView.setOnClickListener(view -> {
             if (actionBarPopupWindow != null) {
+                return;
+            }
+            if (hideRevokeOption) {
+                showQrCode();
                 return;
             }
             ActionBarPopupWindow.ActionBarPopupWindowLayout layout = new ActionBarPopupWindow.ActionBarPopupWindowLayout(context);
@@ -456,7 +457,7 @@ public class LinkActionView extends LinearLayout {
         if (hideRevokeOption != b) {
             hideRevokeOption = b;
             optionsView.setVisibility(View.VISIBLE);
-            optionsView.setImageDrawable(ContextCompat.getDrawable(optionsView.getContext(), R.drawable.ic_ab_other));
+            optionsView.setImageDrawable(ContextCompat.getDrawable(optionsView.getContext(), R.drawable.msg_qrcode));
         }
     }
 

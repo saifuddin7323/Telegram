@@ -25,6 +25,7 @@
     <string name="SyncContactsAdded">Contacts from this device were added to your account.</string>
     <string name="ConfirmCorrectNumber">Is this the correct number?</string>
     <string name="WrongNumberFormat">Wrong format</string>
+    <string name="tap_here_to_use_bot">Tap here to use this bot</string>
     <string name="ShortNumberInfo">The number you provided is too short for **%1$s**:\n\n**%2$s**\n\nPlease enter the correct number including your country code.</string>
     <string name="EditNumber">Edit number</string>
     <string name="DidNotGetTheCodeInfo">If you didn\'t get the code by SMS or call, please check your **cellular data settings** and phone number:\n\n**%1$s**\n\nYour remaining options are to try another number or to contact Telegram Support. Tap **Help** to send us the technical details so that we can identify the problem.</string>

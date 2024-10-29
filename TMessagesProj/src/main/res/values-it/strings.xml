@@ -25,6 +25,7 @@
     <string name="SyncContactsAdded">I contatti da questo dispositivo sono stati aggiunti al tuo account.</string>
     <string name="ConfirmCorrectNumber">È questo il numero corretto?</string>
     <string name="WrongNumberFormat">Formato errato</string>
+    <string name="tap_here_to_use_bot">Tocca qui per usare questo bot</string>
     <string name="ShortNumberInfo">Il numero che hai fornito è troppo breve per **%1$s**:\n\n**%2$s**\n\nInserisci il numero corretto, incluso il tuo prefisso internazionale.</string>
     <string name="EditNumber">Modifica numero</string>
     <string name="DidNotGetTheCodeInfo">Se non hai ricevuto il codice tramite SMS o chiamata, per favore controlla le tue **impostazioni dati cellulare** e il numero di telefono:\n\n**%1$s**\n\nNon ti resta che provare un altro numero o contattare il supporto Telegram. Tocca **Aiuto** per inviarci i dettagli tecnici in modo da poter identificare il problema.</string>

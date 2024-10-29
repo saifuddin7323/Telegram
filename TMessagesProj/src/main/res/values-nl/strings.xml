@@ -25,6 +25,7 @@
     <string name="SyncContactsAdded">Contacten van dit apparaat zijn aan je account toegevoegd.</string>
     <string name="ConfirmCorrectNumber">Is dit het juiste nummer?</string>
     <string name="WrongNumberFormat">Verkeerd formaat</string>
+    <string name="tap_here_to_use_bot">Tik hier om deze bot te gebruiken</string>
     <string name="ShortNumberInfo">Het nummer dat je hebt verstrekt, is te kort voor **%1$s**:\n\n**%2$s**\n\nVoer alsjeblieft het juiste nummer in (inclusief de landcode).</string>
     <string name="EditNumber">Nummer wijzigen</string>
     <string name="DidNotGetTheCodeInfo">Als je de code niet via SMS of telefonisch hebt ontvangen, controleer dan je **mobiele data-instellingen** en telefoonnummer:\n\n**%1$s**\n\nJe resterende mogelijkheden zijn om een ander nummer te proberen of contact op te nemen met de ondersteuning van Telegram. Tik op **Hulp** om de technische details naar ons te sturen, zodat we het probleem kunnen identificeren.</string>

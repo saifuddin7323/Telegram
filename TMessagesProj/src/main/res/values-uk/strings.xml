@@ -25,6 +25,7 @@
     <string name="SyncContactsAdded">Контакти з цього пристрою додані до вашого акаунта.</string>
     <string name="ConfirmCorrectNumber">Це ваш номер телефону?</string>
     <string name="WrongNumberFormat">Неправильний формат</string>
+    <string name="tap_here_to_use_bot">Натисніть тут, щоб використовувати цього бота</string>
     <string name="ShortNumberInfo">Вказаний номер є занадто коротким для **%1$s**:\n\n**%2$s**\n\nВведіть номер телефону повністю, разом із кодом країни.</string>
     <string name="EditNumber">Змінити номер</string>
     <string name="DidNotGetTheCodeInfo">Якщо ви не одержали коду в SMS або виклику, перевірте **налаштування мобільної мережі** та номер телефону:\n\n**%1$s**\n\nЯкщо це не допоможе, вам залишиться спробувати інший номер телефону або звʼязатися з підтримкою Telegram. Натисніть **Допомога**, щоб надіслати нам технічну інформацію і ми могли зʼясувати проблему.</string>

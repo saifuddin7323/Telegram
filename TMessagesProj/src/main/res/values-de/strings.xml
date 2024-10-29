@@ -25,6 +25,7 @@
     <string name="SyncContactsAdded">Kontakte von diesem Gerät wurden deinem Konto hinzugefügt.</string>
     <string name="ConfirmCorrectNumber">Ist das die richtige Nummer?</string>
     <string name="WrongNumberFormat">Falsches Format</string>
+    <string name="tap_here_to_use_bot">Tippen Sie hier, um diesen Bot zu verwenden</string>
     <string name="ShortNumberInfo">Die angegebene Nummer ist zu kurz für **%1$s**:\n\n**%2$s**\n\nTippe die richtige Nummer ein, inkl. deiner Landeskennzahl.</string>
     <string name="EditNumber">Nummer ändern</string>
     <string name="DidNotGetTheCodeInfo">Falls du den Code nicht per SMS oder Anruf erhalten hast, prüfe deine **Mobilfunk-Einstellungen** und Handynummer: **%1$s**\n\nHilft das nicht, probiere bitte eine andere Handynummer oder melde dich bei uns, indem du auf **HILFE** tippst.</string>

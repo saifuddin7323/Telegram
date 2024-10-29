@@ -25,6 +25,7 @@
     <string name="SyncContactsAdded">기기에 있는 연락처가 계정에 추가되었습니다.</string>
     <string name="ConfirmCorrectNumber">올바른 번호인가요?</string>
     <string name="WrongNumberFormat">올바르지 않은 포맷</string>
+    <string name="tap_here_to_use_bot">이 봇을 사용하려면 여기를 누르세요</string>
     <string name="ShortNumberInfo">**%1$s**에 제공한 번호가 너무 짧습니다:\n\n**%2$s**\n\n국가코드를 포함한 올바른 번호를 입력해주세요.</string>
     <string name="EditNumber">번호 변경</string>
     <string name="DidNotGetTheCodeInfo">코드를 SMS 혹은 전화로 받지 못하였을 경우, **셀룰러 데이터 설정**과 전화번호를 확인해주세요:\n\n**%1$s**\n\n현재 남은 방법은 다른 번호로 시도하시거나 텔레그램 지원에 연락하는 것입니다. **도움말**을 탭하여 저희가 문제를 확인할 수 있도록 자세하게 기술적인 내용을 전달해주세요.</string>
